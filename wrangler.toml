@@ -3,11 +3,16 @@ main = "src/index.ts"
 compatibility_date = "2024-12-30"
 compatibility_flags = [ "nodejs_compat" ]
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<DATABASE ID>"
-# migrations_dir = "./migrations"
+# Custom domain configuration
+[[routes]]
+pattern = "jasonapi.massive-accord.sxplab.com"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "8ebcc620-db09-43d8-9d55-2dbd246a5576"
+migrations_dir = "./migrations"
 
 # [ai]
 # binding = "AI"
